@@ -16,21 +16,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hf-yt-oMU">
-                        <rect key="frame" x="5" y="32.666666666666664" width="32" height="25"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vV-RE-GrP">
+                        <rect key="frame" x="16" y="10" width="95.666666666666671" height="47"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="49"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vV-RE-GrP">
-                        <rect key="frame" x="38.999999999999993" y="19" width="95.333333333333314" height="38"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alarm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVX-zS-asg">
-                        <rect key="frame" x="5" y="58" width="34" height="16"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVX-zS-asg">
+                        <rect key="frame" x="19.999999999999993" y="62" width="103.33333333333331" height="16"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -44,15 +37,23 @@
                             <action selector="alarmSwitchAction:" destination="KGk-i7-Jjw" eventType="valueChanged" id="otR-qw-CYv"/>
                         </connections>
                     </switch>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hf-yt-oMU">
+                        <rect key="frame" x="116.66666666666669" y="32.666666666666664" width="32" height="25"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="puw-j5-1f7" secondAttribute="trailing" constant="16" id="2Ep-dG-DPz"/>
+                    <constraint firstItem="BVX-zS-asg" firstAttribute="top" secondItem="9vV-RE-GrP" secondAttribute="bottom" constant="5" id="3uw-L6-aGd"/>
                     <constraint firstItem="5hf-yt-oMU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5gg-Mh-Bw4"/>
-                    <constraint firstItem="9vV-RE-GrP" firstAttribute="leading" secondItem="5hf-yt-oMU" secondAttribute="trailing" constant="2" id="C3E-Xx-mAk"/>
                     <constraint firstAttribute="bottom" secondItem="9vV-RE-GrP" secondAttribute="bottom" constant="33" id="FZ7-Is-8MR"/>
+                    <constraint firstItem="9vV-RE-GrP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="H2D-Ab-leZ"/>
+                    <constraint firstItem="9vV-RE-GrP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Lec-1a-PDj"/>
                     <constraint firstItem="puw-j5-1f7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PdV-fK-IL9"/>
-                    <constraint firstItem="9vV-RE-GrP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="V4J-Gx-KIV"/>
-                    <constraint firstItem="5hf-yt-oMU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="hiV-6c-O2G"/>
+                    <constraint firstItem="5hf-yt-oMU" firstAttribute="leading" secondItem="9vV-RE-GrP" secondAttribute="trailing" constant="5" id="cd9-cM-vlF"/>
+                    <constraint firstItem="BVX-zS-asg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="djj-bv-lOF"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

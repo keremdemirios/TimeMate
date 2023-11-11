@@ -27,13 +27,13 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-//        return viewModel.numberOfSections()
-        return 1
+        return viewModel.numberOfSections()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return viewModel.numberOfRowsInSection(in: section)
-        return cellDataSource.count
+//        return cellDataSource.count
+        return viewModel.cellDataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -43,7 +43,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-        let cellViewModel = cellDataSource[indexPath.row]
+        let cellViewModel = viewModel.cellDataSource[indexPath.row]
         cell.setupCell(viewModel: cellViewModel)
         cell.selectionStyle = .none
         

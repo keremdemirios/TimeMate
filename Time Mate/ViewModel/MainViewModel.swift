@@ -12,12 +12,36 @@ class MainViewModel {
 //    var cellDataSource: Observable<[MovieTableCellViewModel]> = Observable(nil)
 //    var dataSource: TrendingMovieModel?
     
-//    func numberOfSections() -> Int {
-//        1
-//    }
-//    
-//    func numberOfRowsInSection(in section: Int) -> Int {
-//        return 10
-//    }
+    var cellDataSource: [ClockTableViewCellViewModel] = [
+    ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: true),
+    ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "AM", alarmTitle: "Alarm 2", alarmSwitch: false),
+    ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: true),
+    ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "AM", alarmTitle: "Alarm 2", alarmSwitch: false),
+    ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: true),
+    ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "AM", alarmTitle: "Alarm 2", alarmSwitch: false),
+    ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: true),
+    ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "AM", alarmTitle: "Alarm 2", alarmSwitch: false),
+    ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: true),
+    ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "AM", alarmTitle: "Alarm 2", alarmSwitch: false),
+    ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: true),
+    ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "AM", alarmTitle: "Alarm 2", alarmSwitch: false),
+    ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: true),
+    ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "AM", alarmTitle: "Alarm 2", alarmSwitch: false),
+    ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: true),
+    ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "AM", alarmTitle: "Alarm 2", alarmSwitch: false),
+    ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: true),
+    ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "AM", alarmTitle: "Alarm 2", alarmSwitch: false),
+    ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: true),
+    ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "AM", alarmTitle: "Alarm 2", alarmSwitch: false),
+    ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: true),
+    ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "AM", alarmTitle: "Alarm 2", alarmSwitch: false),]
+    
+    func numberOfSections() -> Int {
+        1
+    }
+    
+    func numberOfRowsInSection(in section: Int) -> Int {
+        return cellDataSource.count
+    }
     
 }
