@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		413F87022AFEE4AD0006E677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F87012AFEE4AD0006E677 /* AppDelegate.swift */; };
 		413F87042AFEE4AD0006E677 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F87032AFEE4AD0006E677 /* SceneDelegate.swift */; };
-		413F87062AFEE4AD0006E677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F87052AFEE4AD0006E677 /* ViewController.swift */; };
 		413F870B2AFEE4AF0006E677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413F870A2AFEE4AF0006E677 /* Assets.xcassets */; };
 		413F870E2AFEE4AF0006E677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413F870C2AFEE4AF0006E677 /* LaunchScreen.storyboard */; };
 		413F871C2AFEE77F0006E677 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F871A2AFEE77F0006E677 /* MainViewController.swift */; };
@@ -17,13 +16,15 @@
 		413F871F2AFEE7C00006E677 /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F871E2AFEE7C00006E677 /* MainViewController+TableView.swift */; };
 		41F025BA2AFEE94200FE84A8 /* MainClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F025B82AFEE94200FE84A8 /* MainClockTableViewCell.swift */; };
 		41F025BB2AFEE94200FE84A8 /* MainClockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41F025B92AFEE94200FE84A8 /* MainClockTableViewCell.xib */; };
+		41F025BF2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F025BE2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift */; };
+		41F025C12AFF031D00FE84A8 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F025C02AFF031D00FE84A8 /* MainViewModel.swift */; };
+		41F025C42AFF077200FE84A8 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F025C32AFF077200FE84A8 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		413F86FE2AFEE4AD0006E677 /* Time Mate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Mate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		413F87012AFEE4AD0006E677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		413F87032AFEE4AD0006E677 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		413F87052AFEE4AD0006E677 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		413F870A2AFEE4AF0006E677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		413F870D2AFEE4AF0006E677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413F870F2AFEE4AF0006E677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +33,9 @@
 		413F871E2AFEE7C00006E677 /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
 		41F025B82AFEE94200FE84A8 /* MainClockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainClockTableViewCell.swift; sourceTree = "<group>"; };
 		41F025B92AFEE94200FE84A8 /* MainClockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainClockTableViewCell.xib; sourceTree = "<group>"; };
+		41F025BE2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		41F025C02AFF031D00FE84A8 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		41F025C32AFF077200FE84A8 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +68,12 @@
 		413F87002AFEE4AD0006E677 /* Time Mate */ = {
 			isa = PBXGroup;
 			children = (
+				41F025C22AFF076300FE84A8 /* Classes */,
+				41F025BD2AFEFED400FE84A8 /* ViewModel */,
 				41F025B52AFEE91200FE84A8 /* View */,
 				413F87152AFEE7530006E677 /* Controllers */,
 				413F87012AFEE4AD0006E677 /* AppDelegate.swift */,
 				413F87032AFEE4AD0006E677 /* SceneDelegate.swift */,
-				413F87052AFEE4AD0006E677 /* ViewController.swift */,
 				413F870A2AFEE4AF0006E677 /* Assets.xcassets */,
 				413F870C2AFEE4AF0006E677 /* LaunchScreen.storyboard */,
 				413F870F2AFEE4AF0006E677 /* Info.plist */,
@@ -101,6 +106,23 @@
 				41F025B92AFEE94200FE84A8 /* MainClockTableViewCell.xib */,
 			);
 			path = MainClockCell;
+			sourceTree = "<group>";
+		};
+		41F025BD2AFEFED400FE84A8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				41F025BE2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift */,
+				41F025C02AFF031D00FE84A8 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		41F025C22AFF076300FE84A8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				41F025C32AFF077200FE84A8 /* Observable.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				413F87062AFEE4AD0006E677 /* ViewController.swift in Sources */,
+				41F025C42AFF077200FE84A8 /* Observable.swift in Sources */,
+				41F025C12AFF031D00FE84A8 /* MainViewModel.swift in Sources */,
 				41F025BA2AFEE94200FE84A8 /* MainClockTableViewCell.swift in Sources */,
+				41F025BF2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift in Sources */,
 				413F871F2AFEE7C00006E677 /* MainViewController+TableView.swift in Sources */,
 				413F87022AFEE4AD0006E677 /* AppDelegate.swift in Sources */,
 				413F87042AFEE4AD0006E677 /* SceneDelegate.swift in Sources */,

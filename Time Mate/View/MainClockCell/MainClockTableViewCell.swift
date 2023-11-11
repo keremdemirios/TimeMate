@@ -10,6 +10,7 @@ import UIKit
 
 
 class MainClockTableViewCell: UITableViewCell {
+    
     public static var identifier: String {
         get {
             return "MainClockTableViewCell"
@@ -30,12 +31,17 @@ class MainClockTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        configure()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configure(){
+        
     }
     
     // actions
@@ -45,6 +51,13 @@ class MainClockTableViewCell: UITableViewCell {
         } else {
             print("Off")
         }
+    }
+    
+    func setupCell(viewModel: ClockTableViewCellViewModel){
+        self.hourlyTimeLabel.text = viewModel.hourlyTime
+        self.hourLabel.text = viewModel.hour
+        self.alarmTitleLabel.text = viewModel.alarmTitle
+        self.alarmSwitch.isOn = viewModel.alarmSwitch
     }
     
 }
