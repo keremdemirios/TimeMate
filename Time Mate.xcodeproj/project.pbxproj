@@ -19,6 +19,7 @@
 		41F025BF2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F025BE2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift */; };
 		41F025C12AFF031D00FE84A8 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F025C02AFF031D00FE84A8 /* MainViewModel.swift */; };
 		41F025C42AFF077200FE84A8 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F025C32AFF077200FE84A8 /* Observable.swift */; };
+		41F025C62B00476E00FE84A8 /* ToDos.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41F025C52B00476E00FE84A8 /* ToDos.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		41F025BE2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		41F025C02AFF031D00FE84A8 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		41F025C32AFF077200FE84A8 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		41F025C52B00476E00FE84A8 /* ToDos.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ToDos.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				413F870A2AFEE4AF0006E677 /* Assets.xcassets */,
 				413F870C2AFEE4AF0006E677 /* LaunchScreen.storyboard */,
 				413F870F2AFEE4AF0006E677 /* Info.plist */,
+				41F025C52B00476E00FE84A8 /* ToDos.strings */,
 			);
 			path = "Time Mate";
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				413F870E2AFEE4AF0006E677 /* LaunchScreen.storyboard in Resources */,
 				413F871D2AFEE77F0006E677 /* MainViewController.xib in Resources */,
 				413F870B2AFEE4AF0006E677 /* Assets.xcassets in Resources */,
+				41F025C62B00476E00FE84A8 /* ToDos.strings in Resources */,
 				41F025BB2AFEE94200FE84A8 /* MainClockTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
