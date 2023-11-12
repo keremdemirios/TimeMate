@@ -43,6 +43,11 @@ class MainViewController: UIViewController {
     // MARK : Actions
     @objc func didTapAdd(){
         print("Add")
+        let vc = AlarmDetailViewController()
+        vc.modalPresentationStyle = .pageSheet
+//        present(vc, animated: true)
+        navigationController?.present(vc, animated: true)
+//        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func didTapEdit(){
