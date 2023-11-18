@@ -10,8 +10,8 @@ import UIKit
 class AlarmDetailViewController: UIViewController {
     // MARK : UI Elements
     
-    
-    @IBOutlet weak var addAlarm: UILabel!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var toolsTableView: UITableView!
     
     // MARK : Life Cycle
     override func viewDidLoad() {
@@ -32,8 +32,6 @@ class AlarmDetailViewController: UIViewController {
     // MARK : Functions
     // MARK : Set Navigation Bar
     func setNavigationBar(){
-//        navigationController?.navigationBar.prefersLargeTitles = true
-        
         // MARK : Right Bar - Add
         let rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(didTapSave))
         rightBarButtonItem.tintColor = .systemOrange
