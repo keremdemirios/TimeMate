@@ -16,21 +16,24 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oB-uc-Tw3">
-                        <rect key="frame" x="15" y="11.666666666666664" width="54" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMG-bu-Vaa">
+                        <rect key="frame" x="100" y="11.666666666666664" width="70" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="cb1-vR-Onu"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="6oB-uc-Tw3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oLl-bR-PE7"/>
-                    <constraint firstItem="6oB-uc-Tw3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="tl9-8T-V7Q"/>
+                    <constraint firstItem="kMG-bu-Vaa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="27t-JM-X6P"/>
+                    <constraint firstItem="kMG-bu-Vaa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="100" id="Xuf-IL-DOj"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="repeatLabel" destination="6oB-uc-Tw3" id="KCQ-zT-WEi"/>
+                <outlet property="repeatLabel" destination="kMG-bu-Vaa" id="tBW-eD-kFa"/>
             </connections>
             <point key="canvasLocation" x="-53" y="20"/>
         </tableViewCell>

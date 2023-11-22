@@ -8,7 +8,7 @@
 import UIKit
 
 class RepeatTableViewCell: UITableViewCell {
-
+    
     public static var identifier: String {
         get {
             return "RepeatTableViewCell"

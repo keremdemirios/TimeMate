@@ -25,7 +25,7 @@
                     <locale key="locale" localeIdentifier="apw_US"/>
                 </datePicker>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Qp-j5-HXq">
-                    <rect key="frame" x="5" y="327" width="383" height="200"/>
+                    <rect key="frame" x="20" y="327" width="353" height="200"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="OKK-iT-Opu"/>
@@ -36,13 +36,12 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="f9X-vu-kLa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Cn8-m3-kjt"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3Qp-j5-HXq" secondAttribute="trailing" constant="5" id="DUE-Zg-Eoz"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3Qp-j5-HXq" secondAttribute="trailing" constant="5" id="HsH-6M-qQl"/>
                 <constraint firstItem="3Qp-j5-HXq" firstAttribute="top" secondItem="f9X-vu-kLa" secondAttribute="bottom" constant="2" id="LTo-eq-08S"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f9X-vu-kLa" secondAttribute="trailing" constant="10" id="Tdn-eM-eDQ"/>
-                <constraint firstItem="3Qp-j5-HXq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="Tqj-eH-uVo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3Qp-j5-HXq" secondAttribute="trailing" constant="20" id="W0d-OL-Qxu"/>
                 <constraint firstItem="3Qp-j5-HXq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="am2-M1-KJd"/>
                 <constraint firstItem="f9X-vu-kLa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="dHF-Ci-cGa"/>
+                <constraint firstItem="3Qp-j5-HXq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="dbc-dT-BR7"/>
                 <constraint firstItem="f9X-vu-kLa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="mJv-ET-ZeJ"/>
             </constraints>
             <point key="canvasLocation" x="-150.38167938931298" y="19.718309859154932"/>
