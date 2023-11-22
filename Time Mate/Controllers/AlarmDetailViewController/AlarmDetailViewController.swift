@@ -23,6 +23,7 @@ class AlarmDetailViewController: UIViewController {
     // MARK : Configure
     private func configure(){
         setupUI()
+        setupTableView()
         setNavigationBar()
     }
     // MARK : Setup UI

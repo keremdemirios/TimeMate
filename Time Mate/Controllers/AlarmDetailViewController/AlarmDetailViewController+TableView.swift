@@ -17,8 +17,7 @@ extension AlarmDetailViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func registerCells(){
-//        toolsTableView.register(MainClockTableViewCell.register(), forCellReuseIdentifier: MainClockTableViewCell.identifier)
-        
+        toolsTableView.register(RepeatTableViewCell.register(), forCellReuseIdentifier: RepeatTableViewCell.identifier)
     }
     
     func reloadTableView(){
@@ -39,15 +38,12 @@ extension AlarmDetailViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainClockTableViewCell.identifier, for: indexPath) as? MainClockTableViewCell else {
-            print("UITableViewCell does not support.")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RepeatTableViewCell.identifier, for: indexPath) as? RepeatTableViewCell else {
+            print("RepeatTableViewCell does not support.")
             return UITableViewCell()
         }
         
-//        let cellViewModel = viewModel.cellDataSource[indexPath.row]
-//        cell.setupCell(viewModel: cellViewModel)
-//        cell.selectionStyle = .none
-        
+//        cell.repeatLabel.text = "Kerem"
         return cell
     }
 }

@@ -16,8 +16,6 @@
 		410DBFF82B08585600FF577C /* SoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410DBFF62B08585600FF577C /* SoundTableViewCell.xib */; };
 		410DBFFB2B08585D00FF577C /* SnoozeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410DBFF92B08585D00FF577C /* SnoozeTableViewCell.swift */; };
 		410DBFFC2B08585D00FF577C /* SnoozeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410DBFFA2B08585D00FF577C /* SnoozeTableViewCell.xib */; };
-		410DC0222B085B1E00FF577C /* ToolsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410DC0202B085B1E00FF577C /* ToolsTableViewCell.swift */; };
-		410DC0232B085B1E00FF577C /* ToolsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410DC0212B085B1E00FF577C /* ToolsTableViewCell.xib */; };
 		413F87022AFEE4AD0006E677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F87012AFEE4AD0006E677 /* AppDelegate.swift */; };
 		413F87042AFEE4AD0006E677 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F87032AFEE4AD0006E677 /* SceneDelegate.swift */; };
 		413F870B2AFEE4AF0006E677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413F870A2AFEE4AF0006E677 /* Assets.xcassets */; };
@@ -45,8 +43,6 @@
 		410DBFF62B08585600FF577C /* SoundTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundTableViewCell.xib; sourceTree = "<group>"; };
 		410DBFF92B08585D00FF577C /* SnoozeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoozeTableViewCell.swift; sourceTree = "<group>"; };
 		410DBFFA2B08585D00FF577C /* SnoozeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnoozeTableViewCell.xib; sourceTree = "<group>"; };
-		410DC0202B085B1E00FF577C /* ToolsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsTableViewCell.swift; sourceTree = "<group>"; };
-		410DC0212B085B1E00FF577C /* ToolsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolsTableViewCell.xib; sourceTree = "<group>"; };
 		413F86FE2AFEE4AD0006E677 /* Time Mate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Mate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		413F87012AFEE4AD0006E677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		413F87032AFEE4AD0006E677 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,19 +73,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		410DBFEA2B08574500FF577C /* ToolsCell */ = {
-			isa = PBXGroup;
-			children = (
-				410DC0202B085B1E00FF577C /* ToolsTableViewCell.swift */,
-				410DC0212B085B1E00FF577C /* ToolsTableViewCell.xib */,
-				410DBFED2B08580900FF577C /* Repeat */,
-				410DBFEE2B08581E00FF577C /* Label */,
-				410DBFEF2B08582400FF577C /* Sound */,
-				410DBFF02B08582600FF577C /* Snooze */,
-			);
-			path = ToolsCell;
-			sourceTree = "<group>";
-		};
 		410DBFED2B08580900FF577C /* Repeat */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				41F025BC2AFEE94900FE84A8 /* MainClockCell */,
-				410DBFEA2B08574500FF577C /* ToolsCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +164,10 @@
 			children = (
 				41F025B82AFEE94200FE84A8 /* MainClockTableViewCell.swift */,
 				41F025B92AFEE94200FE84A8 /* MainClockTableViewCell.xib */,
+				410DBFED2B08580900FF577C /* Repeat */,
+				410DBFEE2B08581E00FF577C /* Label */,
+				410DBFEF2B08582400FF577C /* Sound */,
+				410DBFF02B08582600FF577C /* Snooze */,
 			);
 			path = MainClockCell;
 			sourceTree = "<group>";
@@ -287,7 +273,6 @@
 				413F871D2AFEE77F0006E677 /* MainViewController.xib in Resources */,
 				410DBFE92B08573C00FF577C /* RepeatTableViewCell.xib in Resources */,
 				410DBFFC2B08585D00FF577C /* SnoozeTableViewCell.xib in Resources */,
-				410DC0232B085B1E00FF577C /* ToolsTableViewCell.xib in Resources */,
 				413F870B2AFEE4AF0006E677 /* Assets.xcassets in Resources */,
 				410DBFF82B08585600FF577C /* SoundTableViewCell.xib in Resources */,
 				41F025C62B00476E00FE84A8 /* ToDos.strings in Resources */,
@@ -306,7 +291,6 @@
 				410DBFEC2B08579400FF577C /* AlarmDetailViewController+TableView.swift in Sources */,
 				410DBFF32B08584E00FF577C /* LabelTableViewCell.swift in Sources */,
 				41F025C12AFF031D00FE84A8 /* MainViewModel.swift in Sources */,
-				410DC0222B085B1E00FF577C /* ToolsTableViewCell.swift in Sources */,
 				41F025CB2B01731400FE84A8 /* AlarmDetailViewController.swift in Sources */,
 				41F025BA2AFEE94200FE84A8 /* MainClockTableViewCell.swift in Sources */,
 				410DBFE82B08573C00FF577C /* RepeatTableViewCell.swift in Sources */,
