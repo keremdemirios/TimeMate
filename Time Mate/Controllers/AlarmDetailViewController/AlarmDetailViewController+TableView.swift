@@ -47,6 +47,10 @@ extension AlarmDetailViewController: UITableViewDelegate, UITableViewDataSource 
         //        return viewModel.cellDataSource.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: RepeatTableViewCell.identifier, for: indexPath) as? RepeatTableViewCell else {
