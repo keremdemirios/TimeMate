@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		410DBFE82B08573C00FF577C /* RepeatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410DBFE62B08573C00FF577C /* RepeatTableViewCell.swift */; };
-		410DBFE92B08573C00FF577C /* RepeatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410DBFE72B08573C00FF577C /* RepeatTableViewCell.xib */; };
 		410DBFEC2B08579400FF577C /* AlarmDetailViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410DBFEB2B08579400FF577C /* AlarmDetailViewController+TableView.swift */; };
 		410DBFF32B08584E00FF577C /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410DBFF12B08584E00FF577C /* LabelTableViewCell.swift */; };
 		410DBFF42B08584E00FF577C /* LabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410DBFF22B08584E00FF577C /* LabelTableViewCell.xib */; };
@@ -23,6 +21,8 @@
 		413F871C2AFEE77F0006E677 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F871A2AFEE77F0006E677 /* MainViewController.swift */; };
 		413F871D2AFEE77F0006E677 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 413F871B2AFEE77F0006E677 /* MainViewController.xib */; };
 		413F871F2AFEE7C00006E677 /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F871E2AFEE7C00006E677 /* MainViewController+TableView.swift */; };
+		41C0DCBD2B0FDBD300D3DCD1 /* RepeatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0DCBB2B0FDBD300D3DCD1 /* RepeatTableViewCell.swift */; };
+		41C0DCBE2B0FDBD300D3DCD1 /* RepeatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41C0DCBC2B0FDBD300D3DCD1 /* RepeatTableViewCell.xib */; };
 		41F025BA2AFEE94200FE84A8 /* MainClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F025B82AFEE94200FE84A8 /* MainClockTableViewCell.swift */; };
 		41F025BB2AFEE94200FE84A8 /* MainClockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41F025B92AFEE94200FE84A8 /* MainClockTableViewCell.xib */; };
 		41F025BF2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F025BE2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift */; };
@@ -34,8 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		410DBFE62B08573C00FF577C /* RepeatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatTableViewCell.swift; sourceTree = "<group>"; };
-		410DBFE72B08573C00FF577C /* RepeatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepeatTableViewCell.xib; sourceTree = "<group>"; };
 		410DBFEB2B08579400FF577C /* AlarmDetailViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlarmDetailViewController+TableView.swift"; sourceTree = "<group>"; };
 		410DBFF12B08584E00FF577C /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
 		410DBFF22B08584E00FF577C /* LabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelTableViewCell.xib; sourceTree = "<group>"; };
@@ -52,6 +50,8 @@
 		413F871A2AFEE77F0006E677 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		413F871B2AFEE77F0006E677 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		413F871E2AFEE7C00006E677 /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
+		41C0DCBB2B0FDBD300D3DCD1 /* RepeatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatTableViewCell.swift; sourceTree = "<group>"; };
+		41C0DCBC2B0FDBD300D3DCD1 /* RepeatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepeatTableViewCell.xib; sourceTree = "<group>"; };
 		41F025B82AFEE94200FE84A8 /* MainClockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainClockTableViewCell.swift; sourceTree = "<group>"; };
 		41F025B92AFEE94200FE84A8 /* MainClockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainClockTableViewCell.xib; sourceTree = "<group>"; };
 		41F025BE2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTableViewCellViewModel.swift; sourceTree = "<group>"; };
@@ -76,8 +76,8 @@
 		410DBFED2B08580900FF577C /* Repeat */ = {
 			isa = PBXGroup;
 			children = (
-				410DBFE62B08573C00FF577C /* RepeatTableViewCell.swift */,
-				410DBFE72B08573C00FF577C /* RepeatTableViewCell.xib */,
+				41C0DCBB2B0FDBD300D3DCD1 /* RepeatTableViewCell.swift */,
+				41C0DCBC2B0FDBD300D3DCD1 /* RepeatTableViewCell.xib */,
 			);
 			path = Repeat;
 			sourceTree = "<group>";
@@ -271,9 +271,9 @@
 				41F025CC2B01731400FE84A8 /* AlarmDetailViewController.xib in Resources */,
 				410DBFF42B08584E00FF577C /* LabelTableViewCell.xib in Resources */,
 				413F871D2AFEE77F0006E677 /* MainViewController.xib in Resources */,
-				410DBFE92B08573C00FF577C /* RepeatTableViewCell.xib in Resources */,
 				410DBFFC2B08585D00FF577C /* SnoozeTableViewCell.xib in Resources */,
 				413F870B2AFEE4AF0006E677 /* Assets.xcassets in Resources */,
+				41C0DCBE2B0FDBD300D3DCD1 /* RepeatTableViewCell.xib in Resources */,
 				410DBFF82B08585600FF577C /* SoundTableViewCell.xib in Resources */,
 				41F025C62B00476E00FE84A8 /* ToDos.strings in Resources */,
 				41F025BB2AFEE94200FE84A8 /* MainClockTableViewCell.xib in Resources */,
@@ -289,11 +289,11 @@
 			files = (
 				41F025C42AFF077200FE84A8 /* Observable.swift in Sources */,
 				410DBFEC2B08579400FF577C /* AlarmDetailViewController+TableView.swift in Sources */,
+				41C0DCBD2B0FDBD300D3DCD1 /* RepeatTableViewCell.swift in Sources */,
 				410DBFF32B08584E00FF577C /* LabelTableViewCell.swift in Sources */,
 				41F025C12AFF031D00FE84A8 /* MainViewModel.swift in Sources */,
 				41F025CB2B01731400FE84A8 /* AlarmDetailViewController.swift in Sources */,
 				41F025BA2AFEE94200FE84A8 /* MainClockTableViewCell.swift in Sources */,
-				410DBFE82B08573C00FF577C /* RepeatTableViewCell.swift in Sources */,
 				41F025BF2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift in Sources */,
 				410DBFF72B08585600FF577C /* SoundTableViewCell.swift in Sources */,
 				413F871F2AFEE7C00006E677 /* MainViewController+TableView.swift in Sources */,

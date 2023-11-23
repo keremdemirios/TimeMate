@@ -1,5 +1,5 @@
 //
-//  RepeatTableViewCell.swift
+//  LabelTableViewCell.swift
 //  Time Mate
 //
 //  Created by Kerem Demir on 18.11.2023.
@@ -8,7 +8,7 @@
 import UIKit
 
 class RepeatTableViewCell: UITableViewCell {
-    
+
     public static var identifier: String {
         get {
             return "RepeatTableViewCell"
@@ -19,8 +19,8 @@ class RepeatTableViewCell: UITableViewCell {
         UINib(nibName: "RepeatTableViewCell", bundle: nil)
     }
     
-    @IBOutlet weak var repeatLabel: UILabel!
     
+    @IBOutlet weak var repeatLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
