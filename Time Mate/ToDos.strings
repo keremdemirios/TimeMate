@@ -1,6 +1,5 @@
 /*
 1- Boş tableview'e yeni saat verileri ekleme
-2- Bar buttonlar ekle
 3- Bar butonlari ekledikten sonra diziyi bosalt ve gerekli methodlari ayarlayarak kullanici girsin.
 4- Uzun alarm ismi dene.
 5- Satira tıklandığında duzenle kismina gecis ayarla

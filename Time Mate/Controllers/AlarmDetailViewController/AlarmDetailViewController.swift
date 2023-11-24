@@ -52,5 +52,4 @@ class AlarmDetailViewController: UIViewController {
         dismiss(animated: true)
         print("Cancel tapped.")
     }
-
 }
