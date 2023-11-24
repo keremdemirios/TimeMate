@@ -27,7 +27,6 @@ class MainClockTableViewCell: UITableViewCell {
     @IBOutlet weak var alarmTitleLabel: UILabel!
     @IBOutlet weak var alarmSwitch: UISwitch!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -41,7 +40,7 @@ class MainClockTableViewCell: UITableViewCell {
     }
     
     func configure(){
-     
+        titleModeForSwitch()
     }
     
     func titleModeForSwitch(){

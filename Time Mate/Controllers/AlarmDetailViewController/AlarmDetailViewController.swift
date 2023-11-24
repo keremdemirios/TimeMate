@@ -49,9 +49,8 @@ class AlarmDetailViewController: UIViewController {
     }
     
     @objc func didTapCancel(){
-        print("Cancel")
         dismiss(animated: true)
-        print("Dismiss tapped.")
+        print("Cancel tapped.")
     }
 
 }

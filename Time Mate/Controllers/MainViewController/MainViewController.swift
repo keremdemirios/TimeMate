@@ -19,6 +19,7 @@ class MainViewController: UIViewController {
         title = "Alarms"
         
         configure()
+        
     }
     
     func configure(){
@@ -43,11 +44,10 @@ class MainViewController: UIViewController {
     // MARK : Actions
     @objc func didTapAdd(){
         print("Add")
-        let vc = AlarmDetailViewController()
-        vc.modalPresentationStyle = .pageSheet
-//        present(vc, animated: true)
-        navigationController?.present(vc, animated: true)
-//        navigationController?.pushViewController(vc, animated: true)
+        let rootVc = AlarmDetailViewController()
+//        rootVc.title = "Add Alarms"
+        let navVc = UINavigationController(rootViewController: rootVc)
+        present(navVc, animated: true)
     }
     
     @objc func didTapEdit(){
