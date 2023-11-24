@@ -12,9 +12,10 @@ extension AlarmDetailViewController: UITableViewDelegate, UITableViewDataSource 
         toolsTableView.delegate = self
         toolsTableView.dataSource = self
         
-        toolsTableView.backgroundColor = .clear
+//        toolsTableView.backgroundColor = .clear
         
-        toolsTableView.separatorColor = .black
+        toolsTableView.separatorColor = .systemGray4
+        toolsTableView.layer.borderColor = UIColor.clear.cgColor
         registerCells()
         configureTableView()
     }
@@ -59,6 +60,7 @@ extension AlarmDetailViewController: UITableViewDelegate, UITableViewDataSource 
                 print("RepeatTableViewCell does not support.")
                 return UITableViewCell()
             }
+            cell.backgroundColor = .systemGray5
             return cell
         }
         if indexPath.row == 1 {
@@ -66,6 +68,7 @@ extension AlarmDetailViewController: UITableViewDelegate, UITableViewDataSource 
                 print("LabelTableViewCell does not support.")
                 return UITableViewCell()
             }
+            cell.backgroundColor = .systemGray5
             return cell
         }
         if indexPath.row == 2 {
@@ -73,6 +76,7 @@ extension AlarmDetailViewController: UITableViewDelegate, UITableViewDataSource 
                 print("SoundTableViewCell does not support.")
                 return UITableViewCell()
             }
+            cell.backgroundColor = .systemGray5
             return cell
         }
         if indexPath.row == 3 {
@@ -80,6 +84,7 @@ extension AlarmDetailViewController: UITableViewDelegate, UITableViewDataSource 
                 print("SnoozeTableViewCell does not support.")
                 return UITableViewCell()
             }
+            cell.backgroundColor = .systemGray5
             return cell
         }
         
