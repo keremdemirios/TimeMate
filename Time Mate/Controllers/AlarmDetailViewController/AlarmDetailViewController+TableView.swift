@@ -13,6 +13,8 @@ extension AlarmDetailViewController: UITableViewDelegate, UITableViewDataSource 
         toolsTableView.dataSource = self
         
         toolsTableView.backgroundColor = .clear
+        
+        toolsTableView.separatorColor = .black
         registerCells()
         configureTableView()
     }

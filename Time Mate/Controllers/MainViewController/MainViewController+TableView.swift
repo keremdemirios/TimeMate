@@ -12,6 +12,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         clockTableView.delegate = self
         clockTableView.dataSource = self
         
+        clockTableView.layer.borderWidth = 0
         clockTableView.backgroundColor = .clear
         registerCells()
     }

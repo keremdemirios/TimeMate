@@ -41,15 +41,29 @@ class MainClockTableViewCell: UITableViewCell {
     }
     
     func configure(){
-        
+     
+    }
+    
+    func titleModeForSwitch(){
+        if alarmSwitch.isOn {
+            hourlyTimeLabel.textColor = .label
+            hourLabel.textColor = .label
+            alarmTitleLabel.textColor = .label
+        } else {
+            hourlyTimeLabel.textColor = .systemGray2
+            hourLabel.textColor = .systemGray2
+            alarmTitleLabel.textColor = .systemGray2
+        }
     }
     
     // actions
     @IBAction func alarmSwitchAction(_ sender: Any) {
         if alarmSwitch.isOn {
             print("On")
+            titleModeForSwitch()
         } else {
             print("Off")
+            titleModeForSwitch()
         }
     }
     

@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Set the root ViewController for the window
         window.rootViewController = navigationController  // You can use viewController instead of navigationController
-        window.overrideUserInterfaceStyle = .light
+        window.overrideUserInterfaceStyle = .dark // always dark mode
         // Display the window
         self.window = window
         window.makeKeyAndVisible()
