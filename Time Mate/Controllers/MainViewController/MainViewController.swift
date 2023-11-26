@@ -45,7 +45,6 @@ class MainViewController: UIViewController {
     @objc func didTapAdd(){
         print("Add")
         let rootVc = AlarmDetailViewController()
-//        rootVc.title = "Add Alarms"
         let navVc = UINavigationController(rootViewController: rootVc)
         present(navVc, animated: true)
     }
