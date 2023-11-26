@@ -8,8 +8,6 @@
 import UIKit
 
 extension RepeatPageViewController: UITableViewDelegate, UITableViewDataSource {
-    
-
 
     func setupTableView(){
         daysTableView.delegate = self
@@ -51,7 +49,7 @@ extension RepeatPageViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: RepeatPageTableViewCell.identifier, for: indexPath) as? RepeatPageTableViewCell else {
-            print("RepeatPageTableViewCell does not support.")
+            print("Repeat page tableview cell does not support...")
             return UITableViewCell()
         }
         cell.backgroundColor = .systemGray5
@@ -61,6 +59,8 @@ extension RepeatPageViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if let cell = tableView.cellForRow(at: indexPath) as? RepeatPageTableViewCell {
+            cell.checkMarkImageView.isHidden.toggle()
+        }
     }
 }

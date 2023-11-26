@@ -45,6 +45,7 @@ class AlarmDetailViewController: UIViewController {
     
     // MARK : Actions
     @objc func didTapSave(){
+        dismiss(animated: true)
         print("Save")
     }
     

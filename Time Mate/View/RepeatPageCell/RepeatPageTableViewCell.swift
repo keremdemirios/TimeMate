@@ -19,6 +19,7 @@ class RepeatPageTableViewCell: UITableViewCell {
         UINib(nibName: "RepeatPageTableViewCell", bundle: nil)
     }
     @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var checkMarkImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,6 +32,6 @@ class RepeatPageTableViewCell: UITableViewCell {
     }
     
     func configure(){
-        
+        checkMarkImageView.isHidden = true
     }
 }

@@ -45,5 +45,4 @@ class RepeatPageViewController: UIViewController {
         dismiss(animated: true)
         print("User came back from the alarm detail page.")
     }
-
 }
