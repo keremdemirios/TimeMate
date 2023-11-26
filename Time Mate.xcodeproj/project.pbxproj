@@ -26,6 +26,8 @@
 		41C550DD2B1384E100F39943 /* RepeatPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C550DB2B1384E100F39943 /* RepeatPageViewController.swift */; };
 		41C550DE2B1384E100F39943 /* RepeatPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41C550DC2B1384E100F39943 /* RepeatPageViewController.xib */; };
 		41C550E12B13851300F39943 /* RepeatPageViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C550E02B13851300F39943 /* RepeatPageViewController+TableView.swift */; };
+		41ED91252B1389D700A7CB41 /* RepeatPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ED91232B1389D700A7CB41 /* RepeatPageTableViewCell.swift */; };
+		41ED91262B1389D700A7CB41 /* RepeatPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41ED91242B1389D700A7CB41 /* RepeatPageTableViewCell.xib */; };
 		41F025BA2AFEE94200FE84A8 /* MainClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F025B82AFEE94200FE84A8 /* MainClockTableViewCell.swift */; };
 		41F025BB2AFEE94200FE84A8 /* MainClockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41F025B92AFEE94200FE84A8 /* MainClockTableViewCell.xib */; };
 		41F025BF2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F025BE2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift */; };
@@ -58,6 +60,8 @@
 		41C550DB2B1384E100F39943 /* RepeatPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatPageViewController.swift; sourceTree = "<group>"; };
 		41C550DC2B1384E100F39943 /* RepeatPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepeatPageViewController.xib; sourceTree = "<group>"; };
 		41C550E02B13851300F39943 /* RepeatPageViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepeatPageViewController+TableView.swift"; sourceTree = "<group>"; };
+		41ED91232B1389D700A7CB41 /* RepeatPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatPageTableViewCell.swift; sourceTree = "<group>"; };
+		41ED91242B1389D700A7CB41 /* RepeatPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepeatPageTableViewCell.xib; sourceTree = "<group>"; };
 		41F025B82AFEE94200FE84A8 /* MainClockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainClockTableViewCell.swift; sourceTree = "<group>"; };
 		41F025B92AFEE94200FE84A8 /* MainClockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainClockTableViewCell.xib; sourceTree = "<group>"; };
 		41F025BE2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTableViewCellViewModel.swift; sourceTree = "<group>"; };
@@ -168,10 +172,20 @@
 			path = RepeatPageViewController;
 			sourceTree = "<group>";
 		};
+		41ED91202B13898F00A7CB41 /* RepeatPageCell */ = {
+			isa = PBXGroup;
+			children = (
+				41ED91232B1389D700A7CB41 /* RepeatPageTableViewCell.swift */,
+				41ED91242B1389D700A7CB41 /* RepeatPageTableViewCell.xib */,
+			);
+			path = RepeatPageCell;
+			sourceTree = "<group>";
+		};
 		41F025B52AFEE91200FE84A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				41F025BC2AFEE94900FE84A8 /* MainClockCell */,
+				41ED91202B13898F00A7CB41 /* RepeatPageCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,6 +307,7 @@
 				413F870B2AFEE4AF0006E677 /* Assets.xcassets in Resources */,
 				41C0DCBE2B0FDBD300D3DCD1 /* RepeatTableViewCell.xib in Resources */,
 				410DBFF82B08585600FF577C /* SoundTableViewCell.xib in Resources */,
+				41ED91262B1389D700A7CB41 /* RepeatPageTableViewCell.xib in Resources */,
 				41F025C62B00476E00FE84A8 /* ToDos.strings in Resources */,
 				41F025BB2AFEE94200FE84A8 /* MainClockTableViewCell.xib in Resources */,
 			);
@@ -312,6 +327,7 @@
 				41F025C12AFF031D00FE84A8 /* MainViewModel.swift in Sources */,
 				41F025CB2B01731400FE84A8 /* AlarmDetailViewController.swift in Sources */,
 				41F025BA2AFEE94200FE84A8 /* MainClockTableViewCell.swift in Sources */,
+				41ED91252B1389D700A7CB41 /* RepeatPageTableViewCell.swift in Sources */,
 				41F025BF2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift in Sources */,
 				410DBFF72B08585600FF577C /* SoundTableViewCell.swift in Sources */,
 				413F871F2AFEE7C00006E677 /* MainViewController+TableView.swift in Sources */,

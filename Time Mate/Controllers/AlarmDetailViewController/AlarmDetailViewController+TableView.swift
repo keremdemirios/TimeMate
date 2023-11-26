@@ -12,10 +12,6 @@ extension AlarmDetailViewController: UITableViewDelegate, UITableViewDataSource 
         toolsTableView.delegate = self
         toolsTableView.dataSource = self
         
-//        toolsTableView.backgroundColor = .clear
-        
-        toolsTableView.separatorColor = .systemGray4
-        toolsTableView.layer.borderColor = UIColor.clear.cgColor
         registerCells()
         configureTableView()
     }
@@ -38,6 +34,9 @@ extension AlarmDetailViewController: UITableViewDelegate, UITableViewDataSource 
         
         toolsTableView.layer.borderWidth = 1
         toolsTableView.layer.cornerRadius = 12
+        toolsTableView.layer.borderColor = UIColor.clear.cgColor
+        
+        toolsTableView.separatorColor = .systemGray4
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

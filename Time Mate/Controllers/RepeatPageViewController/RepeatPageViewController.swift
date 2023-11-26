@@ -10,6 +10,12 @@ import UIKit
 class RepeatPageViewController: UIViewController {
 
     // MARK : UI Elements
+    let daysOfTheWeek: [String] = {
+        let dateFormatter = DateFormatter()
+        return dateFormatter.weekdaySymbols
+    }()
+    
+    @IBOutlet weak var daysTableView: UITableView!
     
     // MARK : Life Cycle
     override func viewDidLoad() {
@@ -21,6 +27,7 @@ class RepeatPageViewController: UIViewController {
     // MARK : Configure
     private func configure(){
         setupUI()
+        setupTableView()
         setNavigationBars()
     }
     // MARK : Setup UI
