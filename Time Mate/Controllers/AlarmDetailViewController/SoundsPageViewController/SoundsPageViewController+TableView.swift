@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import AudioToolbox
 
 extension SoundsPageViewController: UITableViewDelegate, UITableViewDataSource {
-
+    
     func setupTableView(){
         soundsTableView.delegate = self
         soundsTableView.dataSource = self
@@ -35,6 +36,13 @@ extension SoundsPageViewController: UITableViewDelegate, UITableViewDataSource {
         soundsTableView.layer.borderColor = UIColor.clear.cgColor
     }
     
+    func setId(){
+        let systemSoundIds: [SystemSoundID] = Array(1000...4000).map { SystemSoundID($0)}
+            for id in systemSoundIds {
+                AudioServicesPlaySystemSound(id)
+            }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -53,12 +61,43 @@ extension SoundsPageViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         cell.backgroundColor = .systemGray4
-        cell.soundNameLabel.text = sounds[indexPath.row]
+        cell.soundNameLabel.text = "Sound \(indexPath.row + 1)"
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        if indexPath.row == 0 {
+            AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+        }
+        if indexPath.row == 1 {
+            AudioServicesPlaySystemSound(SystemSoundID(1000))
+        }
+        if indexPath.row == 2 {
+            AudioServicesPlaySystemSound(SystemSoundID(1304))
+        }
+        if indexPath.row == 3 {
+            AudioServicesPlaySystemSound(SystemSoundID(1600))
+        }
+        if indexPath.row == 4 {
+            AudioServicesPlaySystemSound(SystemSoundID(2137))
+        }
+        if indexPath.row == 5 {
+            AudioServicesPlaySystemSound(SystemSoundID(3000))
+        }
+        if indexPath.row == 6 {
+            AudioServicesPlaySystemSound(SystemSoundID(3450))
+        }
+        if indexPath.row == 7 {
+            AudioServicesPlaySystemSound(SystemSoundID(2764))
+        }
+        if indexPath.row == 8 {
+            AudioServicesPlaySystemSound(SystemSoundID(1560))
+        }
+        if indexPath.row == 9 {
+            AudioServicesPlaySystemSound(SystemSoundID(3333))
+        }
+        print(indexPath.row + 1)
     }
 }
 

@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import AVFoundation
+import AudioToolbox
 
 class SoundsPageViewController: UIViewController {
     
     // MARK : UI Elements
     @IBOutlet weak var soundsTableView: UITableView!
-    var sounds = ["Sound 1", "Sound 2", "Sound 3"]
+    var sounds = ["Sound", "Sound","Sound", "Sound", "Sound","Sound", "Sound", "Sound","Sound", "Sound"]
     
     // MARK : Life Cycle
     override func viewDidLoad() {

@@ -20,17 +20,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Vd2-ma-EJt">
-                    <rect key="frame" x="10" y="79" width="373" height="150"/>
+                    <rect key="frame" x="10" y="79" width="373" height="739"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="150" id="OKi-yO-3GP"/>
-                    </constraints>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Vd2-ma-EJt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Gm0-xO-oIO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Vd2-ma-EJt" secondAttribute="bottom" id="K6K-Ja-rrc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Vd2-ma-EJt" secondAttribute="trailing" constant="10" id="Z8T-84-qx8"/>
                 <constraint firstItem="Vd2-ma-EJt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="klk-mk-CBD"/>
             </constraints>
