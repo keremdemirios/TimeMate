@@ -21,6 +21,11 @@
 		413F871C2AFEE77F0006E677 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F871A2AFEE77F0006E677 /* MainViewController.swift */; };
 		413F871D2AFEE77F0006E677 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 413F871B2AFEE77F0006E677 /* MainViewController.xib */; };
 		413F871F2AFEE7C00006E677 /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F871E2AFEE7C00006E677 /* MainViewController+TableView.swift */; };
+		41AE7F282B1524AA000DD699 /* SoundsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE7F262B1524AA000DD699 /* SoundsPageViewController.swift */; };
+		41AE7F292B1524AA000DD699 /* SoundsPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41AE7F272B1524AA000DD699 /* SoundsPageViewController.xib */; };
+		41AE7F2B2B1524DB000DD699 /* SoundsPageViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE7F2A2B1524DB000DD699 /* SoundsPageViewController+TableView.swift */; };
+		41AE7F2E2B152701000DD699 /* SoundsPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE7F2C2B152700000DD699 /* SoundsPageTableViewCell.swift */; };
+		41AE7F2F2B152701000DD699 /* SoundsPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41AE7F2D2B152701000DD699 /* SoundsPageTableViewCell.xib */; };
 		41C0DCBD2B0FDBD300D3DCD1 /* RepeatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0DCBB2B0FDBD300D3DCD1 /* RepeatTableViewCell.swift */; };
 		41C0DCBE2B0FDBD300D3DCD1 /* RepeatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41C0DCBC2B0FDBD300D3DCD1 /* RepeatTableViewCell.xib */; };
 		41C550DD2B1384E100F39943 /* RepeatPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C550DB2B1384E100F39943 /* RepeatPageViewController.swift */; };
@@ -55,6 +60,11 @@
 		413F871A2AFEE77F0006E677 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		413F871B2AFEE77F0006E677 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		413F871E2AFEE7C00006E677 /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
+		41AE7F262B1524AA000DD699 /* SoundsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsPageViewController.swift; sourceTree = "<group>"; };
+		41AE7F272B1524AA000DD699 /* SoundsPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundsPageViewController.xib; sourceTree = "<group>"; };
+		41AE7F2A2B1524DB000DD699 /* SoundsPageViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SoundsPageViewController+TableView.swift"; sourceTree = "<group>"; };
+		41AE7F2C2B152700000DD699 /* SoundsPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsPageTableViewCell.swift; sourceTree = "<group>"; };
+		41AE7F2D2B152701000DD699 /* SoundsPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundsPageTableViewCell.xib; sourceTree = "<group>"; };
 		41C0DCBB2B0FDBD300D3DCD1 /* RepeatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatTableViewCell.swift; sourceTree = "<group>"; };
 		41C0DCBC2B0FDBD300D3DCD1 /* RepeatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepeatTableViewCell.xib; sourceTree = "<group>"; };
 		41C550DB2B1384E100F39943 /* RepeatPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatPageViewController.swift; sourceTree = "<group>"; };
@@ -157,9 +167,27 @@
 			children = (
 				41F025C72B0172E700FE84A8 /* MainViewController */,
 				41F025C82B0172EE00FE84A8 /* AlarmDetailViewController */,
-				41C550DF2B1384ED00F39943 /* RepeatPageViewController */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		41AE7F242B1521B1000DD699 /* SoundsPageCell */ = {
+			isa = PBXGroup;
+			children = (
+				41AE7F2C2B152700000DD699 /* SoundsPageTableViewCell.swift */,
+				41AE7F2D2B152701000DD699 /* SoundsPageTableViewCell.xib */,
+			);
+			path = SoundsPageCell;
+			sourceTree = "<group>";
+		};
+		41AE7F252B1521EC000DD699 /* SoundsPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41AE7F262B1524AA000DD699 /* SoundsPageViewController.swift */,
+				41AE7F272B1524AA000DD699 /* SoundsPageViewController.xib */,
+				41AE7F2A2B1524DB000DD699 /* SoundsPageViewController+TableView.swift */,
+			);
+			path = SoundsPageViewController;
 			sourceTree = "<group>";
 		};
 		41C550DF2B1384ED00F39943 /* RepeatPageViewController */ = {
@@ -186,6 +214,7 @@
 			children = (
 				41F025BC2AFEE94900FE84A8 /* MainClockCell */,
 				41ED91202B13898F00A7CB41 /* RepeatPageCell */,
+				41AE7F242B1521B1000DD699 /* SoundsPageCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +265,8 @@
 				41F025C92B01731400FE84A8 /* AlarmDetailViewController.swift */,
 				41F025CA2B01731400FE84A8 /* AlarmDetailViewController.xib */,
 				410DBFEB2B08579400FF577C /* AlarmDetailViewController+TableView.swift */,
+				41C550DF2B1384ED00F39943 /* RepeatPageViewController */,
+				41AE7F252B1521EC000DD699 /* SoundsPageViewController */,
 			);
 			path = AlarmDetailViewController;
 			sourceTree = "<group>";
@@ -304,7 +335,9 @@
 				410DBFF42B08584E00FF577C /* LabelTableViewCell.xib in Resources */,
 				413F871D2AFEE77F0006E677 /* MainViewController.xib in Resources */,
 				410DBFFC2B08585D00FF577C /* SnoozeTableViewCell.xib in Resources */,
+				41AE7F292B1524AA000DD699 /* SoundsPageViewController.xib in Resources */,
 				413F870B2AFEE4AF0006E677 /* Assets.xcassets in Resources */,
+				41AE7F2F2B152701000DD699 /* SoundsPageTableViewCell.xib in Resources */,
 				41C0DCBE2B0FDBD300D3DCD1 /* RepeatTableViewCell.xib in Resources */,
 				410DBFF82B08585600FF577C /* SoundTableViewCell.xib in Resources */,
 				41ED91262B1389D700A7CB41 /* RepeatPageTableViewCell.xib in Resources */,
@@ -323,6 +356,7 @@
 				41F025C42AFF077200FE84A8 /* Observable.swift in Sources */,
 				410DBFEC2B08579400FF577C /* AlarmDetailViewController+TableView.swift in Sources */,
 				41C0DCBD2B0FDBD300D3DCD1 /* RepeatTableViewCell.swift in Sources */,
+				41AE7F282B1524AA000DD699 /* SoundsPageViewController.swift in Sources */,
 				410DBFF32B08584E00FF577C /* LabelTableViewCell.swift in Sources */,
 				41F025C12AFF031D00FE84A8 /* MainViewModel.swift in Sources */,
 				41F025CB2B01731400FE84A8 /* AlarmDetailViewController.swift in Sources */,
@@ -331,11 +365,13 @@
 				41F025BF2AFEFF2B00FE84A8 /* ClockTableViewCellViewModel.swift in Sources */,
 				410DBFF72B08585600FF577C /* SoundTableViewCell.swift in Sources */,
 				413F871F2AFEE7C00006E677 /* MainViewController+TableView.swift in Sources */,
+				41AE7F2E2B152701000DD699 /* SoundsPageTableViewCell.swift in Sources */,
 				413F87022AFEE4AD0006E677 /* AppDelegate.swift in Sources */,
 				410DBFFB2B08585D00FF577C /* SnoozeTableViewCell.swift in Sources */,
 				41C550DD2B1384E100F39943 /* RepeatPageViewController.swift in Sources */,
 				413F87042AFEE4AD0006E677 /* SceneDelegate.swift in Sources */,
 				41C550E12B13851300F39943 /* RepeatPageViewController+TableView.swift in Sources */,
+				41AE7F2B2B1524DB000DD699 /* SoundsPageViewController+TableView.swift in Sources */,
 				413F871C2AFEE77F0006E677 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

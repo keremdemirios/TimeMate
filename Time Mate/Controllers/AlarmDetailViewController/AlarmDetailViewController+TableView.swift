@@ -99,15 +99,18 @@ extension AlarmDetailViewController: UITableViewDelegate, UITableViewDataSource 
         }
         
         if indexPath.row == 1 {
-            print("Ikinci satir.")
+            print("User came to label section.")
         }
         
         if indexPath.row == 2 {
-            print("Ucundu satir.")
+            print("User came to sound page.")
+            let rootVC = SoundsPageViewController()
+            let navVC = UINavigationController(rootViewController: rootVC)
+            present(navVC, animated: true)
         }
         
         if indexPath.row == 3 {
-            print("4. Satir.")
+            print("User came to snooze section.")
         }
     }
 }
