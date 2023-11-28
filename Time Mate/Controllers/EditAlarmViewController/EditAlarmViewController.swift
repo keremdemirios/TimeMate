@@ -1,29 +1,26 @@
-// repeat - label - sound - snooze
-//  AlarmDetailViewController.swift
+//
+//  EditAlarmViewController.swift
 //  Time Mate
 //
-//  Created by Kerem Demir on 12.11.2023.
+//  Created by Kerem Demir on 28.11.2023.
 //
 
 import UIKit
 
-class AlarmDetailViewController: UIViewController {
+class EditAlarmViewController: UIViewController {
+
     // MARK : UI Elements
-    
-    @IBOutlet weak var datePicker: UIDatePicker!
-    @IBOutlet weak var toolsTableView: UITableView!
     
     // MARK : Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Add Alarms"
+        title = "Edit Alarm"
         view.backgroundColor = .systemBackground
         configure()
     }
     // MARK : Configure
     private func configure(){
         setupUI()
-        setupTableView()
         setNavigationBar()
     }
     // MARK : Setup UI
@@ -31,7 +28,6 @@ class AlarmDetailViewController: UIViewController {
         
     }
     // MARK : Functions
-    // MARK : Set Navigation Bar
     func setNavigationBar(){
         // MARK : Right Bar - Add
         let rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(didTapSave))
@@ -53,4 +49,6 @@ class AlarmDetailViewController: UIViewController {
         dismiss(animated: true)
         print("Cancel tapped.")
     }
+
+
 }

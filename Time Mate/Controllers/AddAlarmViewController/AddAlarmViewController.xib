@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlarmDetailViewController" customModule="Time_Mate" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddAlarmViewController" customModule="Time_Mate" customModuleProvider="target">
             <connections>
                 <outlet property="datePicker" destination="f9X-vu-kLa" id="Q1F-mP-b6N"/>
                 <outlet property="toolsTableView" destination="3Qp-j5-HXq" id="uWD-4y-kfI"/>

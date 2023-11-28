@@ -41,6 +41,6 @@ class SoundsPageViewController: UIViewController {
     // MARK : Actions
     @objc func didTapBack(){
         dismiss(animated: true)
-        print("User came back from the alarm detail page.")
+        print("User came back from the add alarm page.")
     }
 }

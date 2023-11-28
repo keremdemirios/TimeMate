@@ -1,5 +1,5 @@
 //
-//  AlarmDetailViewController+TableView.swift
+//  AddAlarmViewController+TableView.swift
 //  Time Mate
 //
 //  Created by Kerem Demir on 18.11.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension AlarmDetailViewController: UITableViewDelegate, UITableViewDataSource {
+extension AddAlarmViewController: UITableViewDelegate, UITableViewDataSource {
     func setupTableView(){
         toolsTableView.delegate = self
         toolsTableView.dataSource = self

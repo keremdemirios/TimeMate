@@ -50,4 +50,17 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+      if editingStyle == .delete {
+        print("Deleted")
+      }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let rootVC = EditAlarmViewController()
+        let navVC = UINavigationController(rootViewController: rootVC)
+        present(navVC, animated: true)
+        print("Came to self alarm detail page.")
+    }
 }
