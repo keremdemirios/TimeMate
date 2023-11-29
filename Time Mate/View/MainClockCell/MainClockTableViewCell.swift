@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-
 class MainClockTableViewCell: UITableViewCell {
     
     public static var identifier: String {

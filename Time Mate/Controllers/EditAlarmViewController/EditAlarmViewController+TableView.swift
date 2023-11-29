@@ -68,6 +68,7 @@ extension EditAlarmViewController: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             cell.backgroundColor = .systemGray5
+            print(cell.alarmLabelTextField.text ?? "Empty")
             return cell
         }
         if indexPath.row == 2 {

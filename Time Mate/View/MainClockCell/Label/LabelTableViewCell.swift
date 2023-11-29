@@ -36,6 +36,7 @@ class LabelTableViewCell: UITableViewCell {
     
     func configure(){
         alarmLabelTextField.backgroundColor = .clear
+        alarmLabelTextField.textColor = .label
     }
     
 }
