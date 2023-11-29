@@ -33,9 +33,9 @@
                     </constraints>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8e-MR-M4K">
-                    <rect key="frame" x="20" y="567" width="353" height="40"/>
+                    <rect key="frame" x="20" y="567" width="353" height="50"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="ZO3-eX-OAn"/>
+                        <constraint firstAttribute="height" constant="50" id="1Rk-TW-Te2"/>
                     </constraints>
                     <color key="tintColor" systemColor="systemRedColor"/>
                     <state key="normal" title="Button"/>

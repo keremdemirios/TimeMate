@@ -30,7 +30,10 @@ class EditAlarmViewController: UIViewController {
     }
     // MARK : Setup UI
     private func setupUI(){
-        
+        deleteAlarmButton.layer.borderWidth = 1
+        deleteAlarmButton.layer.cornerRadius = 12
+        deleteAlarmButton.layer.borderColor = UIColor.clear.cgColor
+        deleteAlarmButton.backgroundColor = .systemGray5
     }
     // MARK : Functions
     func setNavigationBar(){

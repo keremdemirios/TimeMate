@@ -14,7 +14,7 @@ class MainViewModel {
     
     var cellDataSource: [ClockTableViewCellViewModel] = [
     ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: false),
-    ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "AM", alarmTitle: "Alarm 2", alarmSwitch: false),
+    ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "AM", alarmTitle: "Alarm 2", alarmSwitch: true),
     ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: false)
     ]
     

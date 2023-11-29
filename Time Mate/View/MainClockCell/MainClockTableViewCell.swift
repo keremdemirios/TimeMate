@@ -30,6 +30,7 @@ class MainClockTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
         configure()
     }
 
@@ -71,6 +72,8 @@ class MainClockTableViewCell: UITableViewCell {
         self.hourLabel.text = viewModel.hour
         self.alarmTitleLabel.text = viewModel.alarmTitle
         self.alarmSwitch.isOn = viewModel.alarmSwitch
+        
+        titleModeForSwitch()
     }
     
 }
