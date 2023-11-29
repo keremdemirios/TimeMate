@@ -10,6 +10,9 @@ import UIKit
 class EditAlarmViewController: UIViewController {
 
     // MARK : UI Elements
+    @IBOutlet weak var clockDatePicker: UIDatePicker!
+    @IBOutlet weak var toolsTableView: UITableView!
+    @IBOutlet weak var deleteAlarmButton: UIButton!
     
     // MARK : Life Cycle
     override func viewDidLoad() {
@@ -22,6 +25,8 @@ class EditAlarmViewController: UIViewController {
     private func configure(){
         setupUI()
         setNavigationBar()
+        setupTableView()
+        hideKeyboardWhenTappedAround()
     }
     // MARK : Setup UI
     private func setupUI(){
@@ -49,6 +54,9 @@ class EditAlarmViewController: UIViewController {
         dismiss(animated: true)
         print("Cancel tapped.")
     }
-
+    @IBAction func didTapDelete(_ sender: Any) {
+        print("Deleted alarm.")
+    }
+    
 
 }

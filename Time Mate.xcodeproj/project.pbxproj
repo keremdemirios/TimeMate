@@ -29,6 +29,7 @@
 		41AE7F392B16038E000DD699 /* EditAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE7F372B16038E000DD699 /* EditAlarmViewController.swift */; };
 		41AE7F3A2B16038E000DD699 /* EditAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41AE7F382B16038E000DD699 /* EditAlarmViewController.xib */; };
 		41AE7F3C2B160396000DD699 /* EditAlarmViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE7F3B2B160396000DD699 /* EditAlarmViewController+TableView.swift */; };
+		41AE7F3F2B172A67000DD699 /* HideKeyboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE7F3E2B172A67000DD699 /* HideKeyboard+Extension.swift */; };
 		41C0DCBD2B0FDBD300D3DCD1 /* RepeatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0DCBB2B0FDBD300D3DCD1 /* RepeatTableViewCell.swift */; };
 		41C0DCBE2B0FDBD300D3DCD1 /* RepeatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41C0DCBC2B0FDBD300D3DCD1 /* RepeatTableViewCell.xib */; };
 		41C550DD2B1384E100F39943 /* RepeatPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C550DB2B1384E100F39943 /* RepeatPageViewController.swift */; };
@@ -71,6 +72,7 @@
 		41AE7F372B16038E000DD699 /* EditAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAlarmViewController.swift; sourceTree = "<group>"; };
 		41AE7F382B16038E000DD699 /* EditAlarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditAlarmViewController.xib; sourceTree = "<group>"; };
 		41AE7F3B2B160396000DD699 /* EditAlarmViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditAlarmViewController+TableView.swift"; sourceTree = "<group>"; };
+		41AE7F3E2B172A67000DD699 /* HideKeyboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HideKeyboard+Extension.swift"; sourceTree = "<group>"; };
 		41C0DCBB2B0FDBD300D3DCD1 /* RepeatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatTableViewCell.swift; sourceTree = "<group>"; };
 		41C0DCBC2B0FDBD300D3DCD1 /* RepeatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepeatTableViewCell.xib; sourceTree = "<group>"; };
 		41C550DB2B1384E100F39943 /* RepeatPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatPageViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				41F025BD2AFEFED400FE84A8 /* ViewModel */,
 				41F025B52AFEE91200FE84A8 /* View */,
 				413F87152AFEE7530006E677 /* Controllers */,
+				41AE7F3D2B172A55000DD699 /* Extensions */,
 				413F87012AFEE4AD0006E677 /* AppDelegate.swift */,
 				413F87032AFEE4AD0006E677 /* SceneDelegate.swift */,
 				413F870A2AFEE4AF0006E677 /* Assets.xcassets */,
@@ -205,6 +208,14 @@
 				41AE7F3B2B160396000DD699 /* EditAlarmViewController+TableView.swift */,
 			);
 			path = EditAlarmViewController;
+			sourceTree = "<group>";
+		};
+		41AE7F3D2B172A55000DD699 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41AE7F3E2B172A67000DD699 /* HideKeyboard+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		41C550DF2B1384ED00F39943 /* RepeatPageViewController */ = {
@@ -393,6 +404,7 @@
 				41AE7F2B2B1524DB000DD699 /* SoundsPageViewController+TableView.swift in Sources */,
 				41AE7F3C2B160396000DD699 /* EditAlarmViewController+TableView.swift in Sources */,
 				413F871C2AFEE77F0006E677 /* MainViewController.swift in Sources */,
+				41AE7F3F2B172A67000DD699 /* HideKeyboard+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

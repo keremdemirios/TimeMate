@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditAlarmViewController" customModule="Time_Mate" customModuleProvider="target">
             <connections>
+                <outlet property="clockDatePicker" destination="BYS-l5-r9k" id="5vv-sy-GtN"/>
+                <outlet property="deleteAlarmButton" destination="x8e-MR-M4K" id="C1p-TE-qBa"/>
+                <outlet property="toolsTableView" destination="9KF-jh-9oN" id="IPI-kV-hsL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,14 +20,53 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="BYS-l5-r9k">
+                    <rect key="frame" x="10" y="109" width="373" height="216"/>
+                    <locale key="locale" localeIdentifier="apw_US"/>
+                </datePicker>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9KF-jh-9oN">
+                    <rect key="frame" x="20" y="327" width="353" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="yLI-mg-8bP"/>
+                    </constraints>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8e-MR-M4K">
+                    <rect key="frame" x="20" y="567" width="353" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ZO3-eX-OAn"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Delete Alarm"/>
+                    <connections>
+                        <action selector="didTapDelete:" destination="-1" eventType="touchUpInside" id="DU4-ID-wGc"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemOrangeColor"/>
-            <point key="canvasLocation" x="79" y="20"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="x8e-MR-M4K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="4t5-W3-CR2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x8e-MR-M4K" secondAttribute="trailing" constant="20" id="MZ3-2H-gt8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9KF-jh-9oN" secondAttribute="trailing" constant="20" id="NPq-Zz-eVs"/>
+                <constraint firstItem="BYS-l5-r9k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="QJq-Eh-xQg"/>
+                <constraint firstItem="9KF-jh-9oN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Sld-zC-jxy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BYS-l5-r9k" secondAttribute="trailing" constant="10" id="VkB-a5-8rK"/>
+                <constraint firstItem="BYS-l5-r9k" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="ZKF-3J-U9Y"/>
+                <constraint firstItem="9KF-jh-9oN" firstAttribute="top" secondItem="BYS-l5-r9k" secondAttribute="bottom" constant="2" id="aC5-wK-Yxg"/>
+                <constraint firstItem="x8e-MR-M4K" firstAttribute="top" secondItem="9KF-jh-9oN" secondAttribute="bottom" constant="40" id="reJ-aI-65w"/>
+            </constraints>
+            <point key="canvasLocation" x="78.625954198473281" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

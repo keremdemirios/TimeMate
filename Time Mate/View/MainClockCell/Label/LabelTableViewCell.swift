@@ -36,7 +36,6 @@ class LabelTableViewCell: UITableViewCell {
     
     func configure(){
         alarmLabelTextField.backgroundColor = .clear
-//        alarmLabelTextField.layer.borderWidth
     }
     
 }

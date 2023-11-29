@@ -25,6 +25,7 @@ class AddAlarmViewController: UIViewController {
         setupUI()
         setupTableView()
         setNavigationBar()
+        hideKeyboardWhenTappedAround()
     }
     // MARK : Setup UI
     private func setupUI(){
