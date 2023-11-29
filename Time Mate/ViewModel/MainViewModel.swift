@@ -11,12 +11,17 @@ class MainViewModel {
 //    var isLoading: Observable<Bool> = Observable(false)
 //    var cellDataSource: Observable<[MovieTableCellViewModel]> = Observable(nil)
 //    var dataSource: TrendingMovieModel?
+
     
     var cellDataSource: [ClockTableViewCellViewModel] = [
-    ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: false),
-    ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "AM", alarmTitle: "Alarm 2", alarmSwitch: true),
-    ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: false)
+        ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: false, alarmDate: Date()),
+        ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "PM", alarmTitle: "Alarm 2", alarmSwitch: true, alarmDate: Date()),
+        ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: false, alarmDate: Date())
     ]
+    
+    func sortCellDataSourceByAlarmDate() {
+        cellDataSource.sort { $0.alarmDate < $1.alarmDate }
+    }
     
     func numberOfSections() -> Int {
         1

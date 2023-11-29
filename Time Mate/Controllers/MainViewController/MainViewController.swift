@@ -19,13 +19,13 @@ class MainViewController: UIViewController {
         title = "Alarms"
         
         configure()
-        
     }
     
     func configure(){
         setupTableView()
         setNavigationBar()
         reloadTableView()
+        viewModel.sortCellDataSourceByAlarmDate()
     }
     // MARK : Set Navigation Bar
     func setNavigationBar(){

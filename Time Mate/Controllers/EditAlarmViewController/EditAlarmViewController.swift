@@ -35,6 +35,7 @@ class EditAlarmViewController: UIViewController {
         deleteAlarmButton.layer.borderColor = UIColor.clear.cgColor
         deleteAlarmButton.backgroundColor = .systemGray5
     }
+
     // MARK : Functions
     func setNavigationBar(){
         // MARK : Right Bar - Add
@@ -61,5 +62,17 @@ class EditAlarmViewController: UIViewController {
         print("Deleted alarm.")
     }
     
+    @IBAction func datePickerValueChanged(_ sender: Any) {
+        // 1. Tarihi al
+        let selectedDate = clockDatePicker.date
 
+        // 2. DateFormatter kullanarak tarihi saate çevir
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm" // Saat ve dakika formatı
+        let formattedTime = dateFormatter.string(from: selectedDate)
+
+        // 3. Saati yazdır
+        print("Seçilen saat: \(formattedTime)")
+    }
+    
 }

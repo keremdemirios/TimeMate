@@ -63,4 +63,5 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         present(navVC, animated: true)
         print("Came to self alarm detail page.")
     }
+    
 }
