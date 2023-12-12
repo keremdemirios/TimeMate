@@ -8,6 +8,7 @@
 import UIKit
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func setupTableView(){
         clockTableView.delegate = self
         clockTableView.dataSource = self
@@ -46,8 +47,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cellViewModel = viewModel.cellDataSource[indexPath.row]
         cell.setupCell(viewModel: cellViewModel)
+//        clockTableView.reloadData()
         cell.selectionStyle = .none
-        
         return cell
     }
     

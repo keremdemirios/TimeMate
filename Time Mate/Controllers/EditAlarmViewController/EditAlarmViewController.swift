@@ -7,12 +7,21 @@
 
 import UIKit
 
-class EditAlarmViewController: UIViewController {
+protocol UpdateAlarmDelegate: AnyObject {
+    func updateClock(newTime: String)
+}
 
+class EditAlarmViewController: UIViewController {
+    
+    // MARK : Delegate
+    weak var delegate: UpdateAlarmDelegate?
+    
     // MARK : UI Elements
     @IBOutlet weak var clockDatePicker: UIDatePicker!
     @IBOutlet weak var toolsTableView: UITableView!
     @IBOutlet weak var deleteAlarmButton: UIButton!
+    
+    var currentTime:String = "00:00"
     
     // MARK : Life Cycle
     override func viewDidLoad() {
@@ -50,6 +59,7 @@ class EditAlarmViewController: UIViewController {
     
     // MARK : Actions
     @objc func didTapSave(){
+        delegate?.updateClock(newTime: currentTime)
         dismiss(animated: true)
         print("Save")
     }
@@ -58,6 +68,7 @@ class EditAlarmViewController: UIViewController {
         dismiss(animated: true)
         print("Cancel tapped.")
     }
+    
     @IBAction func didTapDelete(_ sender: Any) {
         print("Deleted alarm.")
     }
@@ -68,11 +79,12 @@ class EditAlarmViewController: UIViewController {
 
         // 2. DateFormatter kullanarak tarihi saate çevir
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "HH:mm" // Saat ve dakika formatı
+        dateFormatter.dateFormat = "h:mm a" // Saat ve dakika formatı AM - PM cinsinden
         let formattedTime = dateFormatter.string(from: selectedDate)
-
+        currentTime = formattedTime
         // 3. Saati yazdır
-        print("Seçilen saat: \(formattedTime)")
+        print("Formatted Time: \(formattedTime)")
+        print("Current Time : \(currentTime)")
     }
     
 }

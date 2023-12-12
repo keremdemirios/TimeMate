@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainClockTableViewCell: UITableViewCell {
+class MainClockTableViewCell: UITableViewCell, UpdateAlarmDelegate {
     
     public static var identifier: String {
         get {
@@ -70,8 +70,11 @@ class MainClockTableViewCell: UITableViewCell {
         self.hourLabel.text = viewModel.hour
         self.alarmTitleLabel.text = viewModel.alarmTitle
         self.alarmSwitch.isOn = viewModel.alarmSwitch
-        
         titleModeForSwitch()
     }
     
+    func updateClock(newTime: String) {
+        hourLabel.text = newTime
+        
+    }
 }
