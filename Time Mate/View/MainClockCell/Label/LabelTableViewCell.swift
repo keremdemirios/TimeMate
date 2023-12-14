@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol LabelTableViewCellDelegate: AnyObject {
+    func didCurrentLabel(alarmLabel: String)
+}
+
 class LabelTableViewCell: UITableViewCell, UITextFieldDelegate {
     
     public static var identifier: String {
@@ -18,6 +22,8 @@ class LabelTableViewCell: UITableViewCell, UITextFieldDelegate {
     public static func register() -> UINib {
         UINib(nibName: "LabelTableViewCell", bundle: nil)
     }
+    
+    weak var delegate: LabelTableViewCellDelegate?
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var alarmLabelTextField: UITextField!
@@ -43,11 +49,11 @@ class LabelTableViewCell: UITableViewCell, UITextFieldDelegate {
     
     // MARK : UITextField Delegates
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if let text = textField.text {
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        if let text = alarmLabelTextField.text {
             print("End Label : \(text)")
             currentAlarmLabel = text
         }
-        print("Label Table View Cell : \(currentAlarmLabel)")
+        delegate?.didCurrentLabel(alarmLabel: currentAlarmLabel)
     }
 }

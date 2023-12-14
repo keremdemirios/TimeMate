@@ -69,6 +69,7 @@ extension AddAlarmViewController: UITableViewDelegate, UITableViewDataSource {
                 return UITableViewCell()
             }
             cell.backgroundColor = .systemGray5
+            cell.delegate = self
             return cell
         }
         if indexPath.row == 2 {
@@ -93,25 +94,23 @@ extension AddAlarmViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            print("User Came to Repeat Page")
             let rootVC = RepeatPageViewController()
             let navVC = UINavigationController(rootViewController: rootVC)
             present(navVC, animated: true)
         }
         
         if indexPath.row == 1 {
-            print("User came to label section.")
+            
         }
         
         if indexPath.row == 2 {
-            print("User came to sound page.")
             let rootVC = SoundsPageViewController()
             let navVC = UINavigationController(rootViewController: rootVC)
             present(navVC, animated: true)
         }
         
         if indexPath.row == 3 {
-            print("User came to snooze section.")
+            
         }
     }
 }

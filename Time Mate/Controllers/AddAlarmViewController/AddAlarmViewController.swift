@@ -11,7 +11,7 @@ protocol AddAlarmViewControllerDelegate: AnyObject {
     func didAddNewAlarm(newAlarm: ClockTableViewCellViewModel)
 }
 
-class AddAlarmViewController: UIViewController {
+class AddAlarmViewController: UIViewController, LabelTableViewCellDelegate {
     
     var viewModel: MainViewModel = MainViewModel()
     weak var delegate: AddAlarmViewControllerDelegate?
@@ -19,8 +19,9 @@ class AddAlarmViewController: UIViewController {
     // MARK : UI Elements
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var toolsTableView: UITableView!
-    var currentTime:String = "00:00"
-    var currentLabel:String = "ALARM"
+    var currentTime:String  = ""
+    var currentLabel:String = ""
+    var currentAMPM:String  = ""
     
     // MARK : Life Cycle
     override func viewDidLoad() {
@@ -54,11 +55,14 @@ class AddAlarmViewController: UIViewController {
         navigationItem.leftBarButtonItem = leftBarButtonItem
     }
     
+    func didCurrentLabel(alarmLabel: String) {
+        self.currentLabel = alarmLabel
+    }
     // MARK : Actions
     @objc func didTapAdd(){
         let newAlarm = ClockTableViewCellViewModel(hour: currentTime,
-                                                  hourlyTime: currentLabel,
-                                                  alarmTitle: "AM",
+                                                  hourlyTime: currentAMPM,
+                                                  alarmTitle: currentLabel,
                                                   alarmSwitch: true,
                                                   alarmDate: Date()
         )
@@ -73,18 +77,25 @@ class AddAlarmViewController: UIViewController {
         print("Cancel tapped.")
     }
     
+    
     @IBAction func datePickerValueChanged(_ sender: Any) {
         // 1. Tarihi al
         let selectedDate = datePicker.date
 
         // 2. DateFormatter kullanarak tarihi saate çevir
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "h:mm a" // Saat ve dakika formatı AM - PM cinsinden
+        dateFormatter.dateFormat = "h:mm" // Saat ve dakika formatı AM - PM cinsinden
+        
+        let AmPmFormatter = DateFormatter()
+        AmPmFormatter.dateFormat = "a"
+        let AmPm = AmPmFormatter.string(from: selectedDate)
+        currentAMPM = AmPm
+        
         let formattedTime = dateFormatter.string(from: selectedDate)
         currentTime = formattedTime
+        
         // 3. Saati yazdır
-        print("Formatted Time: \(formattedTime)")
-        print("Current Time : \(currentTime)")
+        print("AM - PM   Time: \(currentAMPM)")
+        print("Current Time  : \(currentTime)")
     }
 }
-
