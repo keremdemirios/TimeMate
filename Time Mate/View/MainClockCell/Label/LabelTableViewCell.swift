@@ -21,6 +21,7 @@ class LabelTableViewCell: UITableViewCell, UITextFieldDelegate {
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var alarmLabelTextField: UITextField!
+    var currentAlarmLabel:String = "Default Label In Label Table View Cell"
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,18 +32,22 @@ class LabelTableViewCell: UITableViewCell, UITextFieldDelegate {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-        // Configure the view for the selected state
     }
     
     func configure(){
+        alarmLabelTextField.delegate = self
+        
         alarmLabelTextField.backgroundColor = .clear
         alarmLabelTextField.textColor = .label
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let newTitle = (alarmLabelTextField.text as? NSString)?.replacingCharacters(in: range, with: string) ?? ""
-        
-        return true
-    }
+    // MARK : UITextField Delegates
     
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let text = textField.text {
+            print("End Label : \(text)")
+            currentAlarmLabel = text
+        }
+        print("Label Table View Cell : \(currentAlarmLabel)")
+    }
 }

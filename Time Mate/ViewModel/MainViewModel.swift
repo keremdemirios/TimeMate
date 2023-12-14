@@ -10,9 +10,7 @@ import UIKit
 class MainViewModel {
     
     var cellDataSource: [ClockTableViewCellViewModel] = [
-//        ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: false, alarmDate: Date()),
-//        ClockTableViewCellViewModel(hour: "08:30", hourlyTime: "PM", alarmTitle: "Alarm 2", alarmSwitch: true, alarmDate: Date()),
-//        ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: false, alarmDate: Date())
+        ClockTableViewCellViewModel(hour: "12:00", hourlyTime: "AM", alarmTitle: "Alarm 1", alarmSwitch: false, alarmDate: Date())
     ]
     
     func sortCellDataSourceByAlarmDate() {

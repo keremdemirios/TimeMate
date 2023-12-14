@@ -8,6 +8,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
     // MARK : Elements
     var viewModel: MainViewModel = MainViewModel()
     
@@ -44,12 +45,20 @@ class MainViewController: UIViewController {
     // MARK : Actions
     @objc func didTapAdd(){
         print("Add")
-        let rootVc = AddAlarmViewController()
-        let navVc = UINavigationController(rootViewController: rootVc)
-        present(navVc, animated: true)
+        let rootVC = AddAlarmViewController()
+        rootVC.delegate = self
+        let navVC = UINavigationController(rootViewController: rootVC)
+        present(navVC, animated: true)
     }
     
     @objc func didTapEdit(){
         print("Edit")
+    }
+}
+
+extension MainViewController: AddAlarmViewControllerDelegate {
+    func didAddNewAlarm(newAlarm: ClockTableViewCellViewModel) {
+        viewModel.cellDataSource.append(newAlarm)
+        clockTableView.reloadData()
     }
 }

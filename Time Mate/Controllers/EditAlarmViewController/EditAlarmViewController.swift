@@ -7,14 +7,7 @@
 
 import UIKit
 
-protocol UpdateAlarmDelegate: AnyObject {
-    func updateClock(newTime: String)
-}
-
 class EditAlarmViewController: UIViewController {
-    
-    // MARK : Delegate
-    weak var delegate: UpdateAlarmDelegate?
     
     // MARK : UI Elements
     @IBOutlet weak var clockDatePicker: UIDatePicker!
@@ -22,7 +15,17 @@ class EditAlarmViewController: UIViewController {
     @IBOutlet weak var deleteAlarmButton: UIButton!
     
     var currentTime:String = "00:00"
-    
+//    
+//    private let alarm: ClockTableViewCellViewModel
+//    
+//    init(alarm: ClockTableViewCellViewModel) {
+//        self.alarm = alarm
+//        super.init(nibName: "EditAlarmViewController", bundle: nil)
+//    }
+//    
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
     // MARK : Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +62,6 @@ class EditAlarmViewController: UIViewController {
     
     // MARK : Actions
     @objc func didTapSave(){
-        delegate?.updateClock(newTime: currentTime)
         dismiss(animated: true)
         print("Save")
     }

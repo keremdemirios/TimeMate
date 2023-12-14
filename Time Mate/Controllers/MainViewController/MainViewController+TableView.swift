@@ -47,7 +47,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cellViewModel = viewModel.cellDataSource[indexPath.row]
         cell.setupCell(viewModel: cellViewModel)
-//        clockTableView.reloadData()
         cell.selectionStyle = .none
         return cell
     }
@@ -59,6 +58,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let clock = viewModel.cellDataSource[indexPath.row]
         let rootVC = EditAlarmViewController()
         let navVC = UINavigationController(rootViewController: rootVC)
         present(navVC, animated: true)
