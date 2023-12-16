@@ -23,4 +23,14 @@ class MainViewModel {
         return cellDataSource.count
     }
     
+    func getData() {
+        let currentData = UserDefaults.standard.string(forKey: "NewAlarm")
+        
+        if currentData != nil {
+            
+        } else {
+            print("Data is empty.")
+        }
+    }
+    
 }

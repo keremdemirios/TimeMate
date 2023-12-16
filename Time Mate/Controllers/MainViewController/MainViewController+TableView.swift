@@ -64,7 +64,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 //        let clock = viewModel.cellDataSource[indexPath.row]
         let rootVC = EditAlarmViewController()
         let navVC = UINavigationController(rootViewController: rootVC)
-        present(navVC, animated: true)
+//        present(navVC, animated: true)
         print("Came to self alarm detail page.")
     }
     

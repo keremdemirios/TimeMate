@@ -68,6 +68,8 @@ class AddAlarmViewController: UIViewController, LabelTableViewCellDelegate {
         )
         delegate?.didAddNewAlarm(newAlarm: newAlarm)
         
+//        UserDefaults.standard.set(newAlarm, forKey: "NewAlarm")
+        
         dismiss(animated: true)
         print("Added the new alarm.")
         print("Curent Label : \(currentLabel)")
