@@ -68,16 +68,9 @@ class AddAlarmViewController: UIViewController, LabelTableViewCellDelegate {
         )
         delegate?.didAddNewAlarm(newAlarm: newAlarm)
         
-        // Add Core Data
-        let alarmItem = AlarmItem(context: PersistenceService.context)
-        alarmItem.time       = currentTime
-        alarmItem.timeAmPm   = currentAMPM
-        alarmItem.alarmLabel = currentLabel
-        PersistenceService.saveContext()
-        
         dismiss(animated: true)
         print("Added the new alarm.")
-        print("Cuurent Label : \(currentLabel)")
+        print("Curent Label : \(currentLabel)")
     }
     
     @objc func didTapCancel(){

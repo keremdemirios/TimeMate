@@ -53,7 +53,10 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
       if editingStyle == .delete {
-        print("Deleted")
+          print("Deleted")
+          
+          viewModel.cellDataSource.remove(at: indexPath.row)
+          clockTableView.reloadData()
       }
     }
     
